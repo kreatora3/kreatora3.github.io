@@ -7,6 +7,10 @@
     var routes =  new ImageArray
     var renderer = new Renderer(routes.imageRoutes)
     var randomizedArray =  renderer.RandomizeArray()
+    var randomNumber = Math.floor(Math.random()*2)
+    if(randomNumber === 1){
+        document.getElementById('canvas').style.backgroundImage = 'url("images/bg.jpg")'
+    }
     renderer.DrawCanvas(randomizedArray, function(images){
 
         var offsetX = 10
